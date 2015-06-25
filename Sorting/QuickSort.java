@@ -1,6 +1,6 @@
 /**
  * This class implements the QuickSort algorithm using one randomly chosen
- * pivot. It runs in O(log (n)) time even the array contains all the same
+ * pivot. It runs in O(nlog (n)) time even the array contains all the same
  * elements.
  * 
  * When finding the position of pivot, two pointers (i.e. i and j) are used (one
@@ -10,7 +10,7 @@
  * 
  * Then, two recursively calls are made to sort the left and right arrays.
  * 
- * @author Xi Chen
+ * @author Yanli Sai
  * 
  */
 public final class QuickSort {
@@ -18,9 +18,7 @@ public final class QuickSort {
     /**
      * Prevent instantiation
      */
-    private QuickSort() {
-
-    }
+    private QuickSort() {}
 
     /**
      * Sort the specified array. The array must be comparable
@@ -84,5 +82,4 @@ public final class QuickSort {
         a[idx1] = a[idx2];
         a[idx2] = temp;
     }
-
 }
